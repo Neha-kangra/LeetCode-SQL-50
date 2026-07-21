@@ -1,22 +1,27 @@
 # 001. Recyclable and Low Fat Products 
+
 ## Problem 
-Find the IDs of products that are both low fat and recyclable. 
+Find the IDs of products that are both low fat and recyclable.
+
 ## Table Schema
 **Products** 
+
 | Column Name | Type  |
-| product_id        |   int    |
-| low_fats            | enum ('Y', 'N') | 
-| recyclable         | enum ('Y', 'N') | 
+|-------------|-------|
+| product_id  |   int |
+| low_fats    | enum ('Y', 'N') | 
+| recyclable  | enum ('Y', 'N') | 
 
 ## Explanation Select the ‘product_id’ from the ‘Products’ table where both: 
 - low_fats = 'Y'
-- recyclable = 'Y'`
+- recyclable = 'Y'
+  
 ## SQL Concepts 
 - SELECT 
 - WHERE 
 - AND
 
-##solution
+## Solution
 SELECT product_id
 FROM Products
 WHERE low_fats = 'Y'
